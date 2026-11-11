@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-AO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0B1F3A" />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Recuperar palavra-passe | Video Intelligence</title>
+  </head>
+  <body data-page="recuperar-palavra-passe">
+    <div class="auth">
+      <aside class="auth-aside">
+        <span data-logo="light"></span>
+        <div>
+          <p class="auth-statement">Pesquisa em gravações de videovigilância autorizadas, com revisão humana em cada resultado.</p>
+          <ul class="principles">
+            <li><i data-icon="shield-check" data-size="16"></i>Acesso apenas a câmaras e arquivos autorizados</li>
+            <li><i data-icon="clipboard-check" data-size="16"></i>Revisão humana obrigatória em cada resultado</li>
+            <li><i data-icon="scroll-text" data-size="16"></i>Todas as ações ficam registadas</li>
+          </ul>
+        </div>
+        <div class="ruler" aria-hidden="true"><span class="ruler-mark"></span></div>
+      </aside>
+
+      <main class="auth-main">
+        <div class="auth-card">
+          <div class="auth-logo-mobile"><span data-logo="dark"></span></div>
+          <h1>Recuperar palavra-passe</h1>
+          <p class="lead">Indique o email da sua conta.</p>
+          <div class="auth-content">
+            <div class="alert alert-success" data-success hidden role="status"><i data-icon="check-circle" data-size="16"></i><div class="alert-body"></div></div>
+            <form class="form" data-form novalidate>
+              <div class="alert alert-error" data-form-alert hidden role="alert"><i data-icon="x-circle" data-size="16"></i><div class="alert-body"></div></div>
+              <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" inputmode="email" />
+              <p class="field-error" id="email-error" data-error-for="email" hidden></p>
+            </div>
+              <button type="submit" class="btn btn-primary btn-block">Enviar instruções</button>
+            </form>
+          </div>
+          <div class="auth-footer"><a class="link" href="entrar.html">Voltar a entrar</a></div>
+        </div>
+      </main>
+    </div>
+    <script src="js/config.js"></script>
+    <script src="js/icons.js"></script>
+    <script src="js/dom.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/http.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/mocks.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/session.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/auth-pages.js"></script>
+    <script>VI.authPages.start();</script>
+  </body>
+</html>

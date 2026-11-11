@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-AO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0B1F3A" />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Criar conta | Video Intelligence</title>
+  </head>
+  <body data-page="criar-conta">
+    <div class="auth">
+      <aside class="auth-aside">
+        <span data-logo="light"></span>
+        <div>
+          <p class="auth-statement">Pesquisa em gravações de videovigilância autorizadas, com revisão humana em cada resultado.</p>
+          <ul class="principles">
+            <li><i data-icon="shield-check" data-size="16"></i>Acesso apenas a câmaras e arquivos autorizados</li>
+            <li><i data-icon="clipboard-check" data-size="16"></i>Revisão humana obrigatória em cada resultado</li>
+            <li><i data-icon="scroll-text" data-size="16"></i>Todas as ações ficam registadas</li>
+          </ul>
+        </div>
+        <div class="ruler" aria-hidden="true"><span class="ruler-mark"></span></div>
+      </aside>
+
+      <main class="auth-main">
+        <div class="auth-card">
+          <div class="auth-logo-mobile"><span data-logo="dark"></span></div>
+          <h1>Criar conta</h1>
+          <p class="lead">O acesso às gravações depende das permissões atribuídas.</p>
+          <div class="auth-content">
+            <div class="alert alert-success" data-success hidden role="status"><i data-icon="check-circle" data-size="16"></i><div class="alert-body"></div></div>
+            <form class="form" data-form novalidate>
+              <div class="alert alert-error" data-form-alert hidden role="alert"><i data-icon="x-circle" data-size="16"></i><div class="alert-body"></div></div>
+              <div class="field">
+              <label for="name">Nome completo</label>
+              <input id="name" name="name" type="text" autocomplete="name" />
+              <p class="field-error" id="name-error" data-error-for="name" hidden></p>
+            </div>
+              <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" inputmode="email" />
+              <p class="field-error" id="email-error" data-error-for="email" hidden></p>
+            </div>
+              <div class="field">
+              <label for="password">Palavra-passe</label>
+              <div class="input-wrap"><input id="password" name="password" type="password" autocomplete="new-password" /><button type="button" class="password-toggle" data-toggle-password="password"></button></div>
+              <p class="field-hint">Pelo menos 12 caracteres, com maiúsculas, minúsculas e números.</p>
+              <p class="field-error" id="password-error" data-error-for="password" hidden></p>
+            </div>
+              <div class="field">
+              <label for="confirm">Repetir palavra-passe</label>
+              <div class="input-wrap"><input id="confirm" name="confirm" type="password" autocomplete="new-password" /><button type="button" class="password-toggle" data-toggle-password="confirm"></button></div>
+              <p class="field-error" id="confirm-error" data-error-for="confirm" hidden></p>
+            </div>
+              <div class="field">
+                <label class="check" style="font-weight:400;margin:0">
+                  <input id="accepted" name="accepted" type="checkbox" />
+                  <span>Vou usar a plataforma apenas com câmaras e gravações para as quais tenho autorização.</span>
+                </label>
+                <p class="field-error" id="accepted-error" data-error-for="accepted" hidden></p>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Criar conta</button>
+            </form>
+          </div>
+          <div class="auth-footer">Já tem conta? <a class="link" href="entrar.html">Entrar</a></div>
+        </div>
+      </main>
+    </div>
+    <script src="js/config.js"></script>
+    <script src="js/icons.js"></script>
+    <script src="js/dom.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/http.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/mocks.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/session.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/auth-pages.js"></script>
+    <script>VI.authPages.start();</script>
+  </body>
+</html>
